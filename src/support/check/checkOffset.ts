@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import type { Selector } from 'webdriverio';
 
 /**

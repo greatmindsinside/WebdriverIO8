@@ -73,6 +73,19 @@ export const config: Options.Testrunner = {
       maxInstances: 1,
       browserName: 'chrome',
       acceptInsecureCerts: true,
+      'goog:chromeOptions': {
+        // to run chrome headless the following flags are required
+        // (see https://developers.google.com/web/updates/2017/04/headless-chrome)
+        excludeSwitches: ['enable-logging'],
+        args: [
+          '--disable-gpu',
+          '--disable-logging',
+          '--disable-extensions',
+          '--disable-dev-shm-usage',
+          '--disable-background-networking',
+        ],
+      },
+
       // If outputDir is provided WebdriverIO can capture driver session logs
       // it is possible to configure which logTypes to include/exclude.
       // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
@@ -153,7 +166,7 @@ export const config: Options.Testrunner = {
       video,
       {
         saveAllVideos: true, // If true, also saves videos for successful test cases
-        videoSlowdownMultiplier: 25, // Higher to get slower videos, lower for faster videos [Value 1-100]
+        videoSlowdownMultiplier: 5, // Higher to get slower videos, lower for faster videos [Value 1-100]
       },
     ],
     [
@@ -168,9 +181,10 @@ export const config: Options.Testrunner = {
     [
       'spec',
       {
-        displayStacktrace: 'all', // display stacktrace for each failed assertion, values: (all|specs|summary|none)
-        displayPending: true, // display each pending spec
-        displayDuration: true, // display each spec duration
+        onlyFailures: true,
+        addConsoleLogs: true,
+        realtimeReporting: true,
+        showPreface: false,
       },
     ],
   ],

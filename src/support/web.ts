@@ -1,6 +1,5 @@
 /* eslint-disable require-jsdoc */
 import { Selector } from 'webdriverio';
-import checkIfElementExists from './lib/checkIfElementExists';
 
 type ELEMENTS = WebdriverIO.Element | Promise<WebdriverIO.Element>;
 
@@ -25,7 +24,6 @@ export type actions = 'click' | 'doubleClick';
 export async function clickOn(selector: Selector, action: actions, type: 'link' | 'selector') {
   const selector2 = type === 'link' ? `=${selector}` : selector;
   const method: string = action === 'click' ? 'click' : 'doubleClick';
-  await checkIfElementExists(selector2);
   await $(selector2)[method]();
 }
 

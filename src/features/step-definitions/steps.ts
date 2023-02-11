@@ -1,3 +1,4 @@
+/* eslint-disable wdio/no-debug */
 import { Given, When, Then } from '@wdio/cucumber-framework';
 
 import chai from 'chai'; // Using Expect style
@@ -19,7 +20,6 @@ Given('debug', async () => {
 
 Given('I wait for the page to load', async () => {
   await waitForPageToLoad();
-  await clickOn('ham', 'click', 'link');
 });
 
 Given(/^I am on the (\w+) page$/, async page => {

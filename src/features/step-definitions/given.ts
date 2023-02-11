@@ -1,6 +1,5 @@
-import { Given, defineStep, defineParameterType } from '@cucumber/cucumber';
+import { Given, defineParameterType } from '@cucumber/cucumber';
 
-import { setDefaultTimeout } from '@wdio/cucumber-framework';
 import checkContainsAnyText from '../../support/check/checkContainsAnyText.js';
 import checkIsEmpty from '../../support/check/checkIsEmpty.js';
 import checkContainsText from '../../support/check/checkContainsText.js';

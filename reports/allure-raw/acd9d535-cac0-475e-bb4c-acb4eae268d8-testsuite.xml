@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1675391407182' stop='1675401411105'>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1676097134750' stop='1676097196517'>
     <name>Search on Google</name>
     <title>Search on Google</title>
     <test-cases>
-        <test-case start='1675391407220' status='broken' stop='1675401411098'>
+        <test-case start='1676097134791' status='passed' stop='1676097196516'>
             <name>Search for something on Google</name>
             <title>Search for something on Google</title>
             <labels>
@@ -13,72 +13,65 @@
                 <label name='feature' value='Search on Google'/>
             </labels>
             <parameters>
-                <parameter kind='argument' name='browser' value='chrome-109.0.5414.120'/>
-                <parameter kind='argument' name='browserVersion' value='109.0.5414.120'/>
-                <parameter kind='argument' name='browserVersion' value='109.0.5414.120'/>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.121'/>
+                <parameter kind='argument' name='browserVersion' value='109.0.5414.121'/>
+                <parameter kind='argument' name='browserVersion' value='109.0.5414.121'/>
             </parameters>
             <steps>
-                <step start='1675391407223' status='passed' stop='1675391408170'>
+                <step start='1676097134795' status='passed' stop='1676097135707'>
                     <name>Given I open the url "www.google.com"</name>
                     <title>Given I open the url "www.google.com"</title>
                     <attachments>
-                        <attachment title='Execution video' source='5e563f02-2cea-4c9a-9495-57ae87f7108a-attachment.mp4' type='video/mp4' size='123'/>
+                        <attachment title='Execution video' source='48edca71-d2e2-45bc-83cc-9c19ebc4bd32-attachment.mp4' type='video/mp4' size='123'/>
                     </attachments>
                     <steps/>
                 </step>
-                <step start='1675391408170' status='passed' stop='1675391408183'>
+                <step start='1676097135707' status='passed' stop='1676097135723'>
                     <name>Then I expect the url to contain "google.com"</name>
                     <title>Then I expect the url to contain "google.com"</title>
                     <attachments/>
                     <steps/>
                 </step>
-                <step start='1675391408183' status='passed' stop='1675391408387'>
+                <step start='1676097135723' status='passed' stop='1676097135863'>
                     <name>Then I wait on element "input[title='Search']" to be displayed</name>
                     <title>Then I wait on element "input[title='Search']" to be displayed</title>
                     <attachments>
-                        <attachment title='Screenshot' source='b14a83ca-916f-415f-99f5-e90f0535f863-attachment.png' type='image/png' size='68425'/>
-                        <attachment title='Screenshot' source='d1654230-325b-4484-b299-a629249ca0e0-attachment.png' type='image/png' size='68425'/>
+                        <attachment title='Screenshot' source='e867055f-2412-4c83-9d44-f41ce5c65448-attachment.png' type='image/png' size='67824'/>
+                        <attachment title='Screenshot' source='1a800c7c-9c4a-4177-aa9a-be8ab0f63db2-attachment.png' type='image/png' size='67824'/>
                     </attachments>
                     <steps/>
                 </step>
-                <step start='1675391408388' status='passed' stop='1675391408505'>
+                <step start='1676097135863' status='passed' stop='1676097135997'>
                     <name>When I set "WebdriverIO" to the inputfield "input[title='Search']"</name>
                     <title>When I set "WebdriverIO" to the inputfield "input[title='Search']"</title>
                     <attachments/>
                     <steps/>
                 </step>
-                <step start='1675391408505' status='passed' stop='1675391411051'>
+                <step start='1676097135997' status='passed' stop='1676097138474'>
                     <name>Then I click on the button "//input[@value='Google Search']"</name>
                     <title>Then I click on the button "//input[@value='Google Search']"</title>
                     <attachments>
-                        <attachment title='Screenshot' source='90c2934b-7bf7-4ffe-910a-c2d01a63a1d5-attachment.png' type='image/png' size='70695'/>
-                        <attachment title='Screenshot' source='5352e42c-764e-4550-807f-4c3b893cfed7-attachment.png' type='image/png' size='109471'/>
+                        <attachment title='Screenshot' source='fa1fd7f4-786b-4454-8145-f8002544e951-attachment.png' type='image/png' size='69892'/>
+                        <attachment title='Screenshot' source='711c06e3-d041-4460-83f2-145353a764a6-attachment.png' type='image/png' size='107518'/>
                     </attachments>
                     <steps/>
                 </step>
-                <step start='1675391411051' status='passed' stop='1675391411064'>
+                <step start='1676097138475' status='passed' stop='1676097138488'>
                     <name>Then I wait for the page to load</name>
                     <title>Then I wait for the page to load</title>
                     <attachments/>
                     <steps/>
                 </step>
-                <step start='1675391411065' status='broken' stop='1675401411098'>
+                <step start='1676097138489' status='passed' stop='1676097196511'>
                     <name>Then debug</name>
                     <title>Then debug</title>
                     <attachments>
-                        <attachment title='Screenshot' source='aa8c95aa-d674-4fec-82eb-a98747a249ee-attachment.png' type='image/png' size='107343'/>
+                        <attachment title='Screenshot' source='b9689f85-519e-4d9c-a368-0cf95c6ae9c3-attachment.png' type='image/png' size='105325'/>
                     </attachments>
                     <steps/>
                 </step>
             </steps>
             <attachments/>
-            <failure>
-                <message>Error: function timed out, ensure the promise resolves within 9999999 milliseconds</message>
-                <stack-trace>Error: function timed out, ensure the promise resolves within 9999999 milliseconds
-                    at Timeout.&lt;anonymous> (C:\cucumber-boilerplate-main\node_modules\@cucumber\cucumber\src\time.ts:60:14)
-                    at listOnTimeout (node:internal/timers:568:17)
-                    at processTimers (node:internal/timers:511:7)</stack-trace>
-            </failure>
         </test-case>
     </test-cases>
 </ns2:test-suite>

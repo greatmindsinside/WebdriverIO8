@@ -1,7 +1,6 @@
 /* eslint-disable valid-jsdoc */
 /* eslint-disable require-jsdoc */
 /* eslint-disable class-methods-use-this */
-import { ChainablePromiseElement } from 'webdriverio';
 
 import Page from './page.js';
 
