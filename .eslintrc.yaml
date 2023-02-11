@@ -1,0 +1,76 @@
+root: true
+
+parser: '@typescript-eslint/parser'
+
+plugins:
+  - wdio
+  - "@typescript-eslint"
+
+extends:
+  - prettier
+  - airbnb-base
+  - plugin:wdio/recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:prettier/recommended
+
+globals:
+  assert: true
+  expect: true
+
+env:
+  es6: true
+  node: true
+
+rules:
+  no-trailing-commas: "off"
+  no-useless-concat: 0
+  function-call-argument-newline:
+    - error
+    - consistent
+  object-curly-newline: 
+    - error
+    - consistent: true
+  quotes:
+    - error
+  comma-dangle:
+    - error
+    - arrays: always-multiline
+      objects: always-multiline
+      imports: always-multiline
+      exports: always-multiline
+      functions: ignore
+  global-require: 'off'
+  import/no-extraneous-dependencies: 0
+  import/prefer-default-export: 0
+  indent:
+    - 'error'
+    - 2
+    - SwitchCase: 1
+  max-len:
+    - 'error'
+    - 120
+    - ignorePattern: '\s*\/\^(.*)\$\/,$'
+  new-cap:
+    - 'error'
+    - newIsCap: true
+      capIsNewExceptions:
+        - 'Given'
+        - 'When'
+        - 'Then'
+  require-jsdoc:
+    - 'warn'
+    - require:
+        FunctionDeclaration: true
+        MethodDefinition: true
+        ClassDeclaration: true
+  strict: 'off'
+  valid-jsdoc:
+    - 'error'
+    - requireReturn: false
+      matchDescription: '.+'
+  "@typescript-eslint/ban-ts-comment": 0
+  "@typescript-eslint/explicit-module-boundary-types": 0
+  import/no-unresolved: 0
+  import/extensions: 0
+  no-restricted-syntax: 0
+  no-await-in-loop: 0
