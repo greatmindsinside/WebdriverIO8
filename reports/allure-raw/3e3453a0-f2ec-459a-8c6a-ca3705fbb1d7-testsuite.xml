@@ -1,0 +1,99 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1676523539939' stop='1676523543932'>
+    <name>The Internet Guinea Pig Website</name>
+    <title>The Internet Guinea Pig Website</title>
+    <test-cases>
+        <test-case start='1676523539972' status='passed' stop='1676523542544'>
+            <name>As a user, I can log into the secure area</name>
+            <title>As a user, I can log into the secure area</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+                <label name='feature' value='The Internet Guinea Pig Website'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.122'/>
+                <parameter kind='argument' name='browserVersion' value='109.0.5414.122'/>
+            </parameters>
+            <steps>
+                <step start='1676523539976' status='passed' stop='1676523541339'>
+                    <name>Given I am on the login page</name>
+                    <title>Given I am on the login page</title>
+                    <attachments>
+                        <attachment title='Execution video' source='4fc5a4bc-dad8-4304-90d4-78ea2234d46d-attachment.mp4' type='video/mp4' size='135'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1676523541341' status='passed' stop='1676523542430'>
+                    <name>When I login with tomsmith and SuperSecretPassword!</name>
+                    <title>When I login with tomsmith and SuperSecretPassword!</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='8a3fb63e-0b49-465a-8e11-9738ec0cdfe4-attachment.png' type='image/png' size='74382'/>
+                        <attachment title='Screenshot' source='e9638e58-bbb4-45f0-9650-da7d15373d95-attachment.png' type='image/png' size='76369'/>
+                        <attachment title='Screenshot' source='05c8396e-7324-44f7-813d-f9891c5dcb85-attachment.png' type='image/png' size='76364'/>
+                        <attachment title='Screenshot' source='acad1080-5d6e-4908-a52a-039bfeda91f9-attachment.png' type='image/png' size='76821'/>
+                        <attachment title='Screenshot' source='4628e5fa-46c8-438c-8f07-0c3b2d00a834-attachment.png' type='image/png' size='76816'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1676523542430' status='passed' stop='1676523542536'>
+                    <name>Then I should see a flash message saying "You logged into a secure area!"</name>
+                    <title>Then I should see a flash message saying "You logged into a secure area!"</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='3bc3b77d-b503-4007-9bfb-329463b24b9b-attachment.png' type='image/png' size='52200'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1676523542556' status='passed' stop='1676523543931'>
+            <name>As a user, I can log into the secure area</name>
+            <title>As a user, I can log into the secure area</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+                <label name='feature' value='The Internet Guinea Pig Website'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.122'/>
+                <parameter kind='argument' name='browserVersion' value='109.0.5414.122'/>
+                <parameter kind='argument' name='browserVersion' value='109.0.5414.122'/>
+            </parameters>
+            <steps>
+                <step start='1676523542557' status='passed' stop='1676523542700'>
+                    <name>Given I am on the login page</name>
+                    <title>Given I am on the login page</title>
+                    <attachments>
+                        <attachment title='Execution video' source='076c4ae8-8013-4008-8481-49df68dc2040-attachment.mp4' type='video/mp4' size='135'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1676523542700' status='passed' stop='1676523543807'>
+                    <name>When I login with foobar and barfoo</name>
+                    <title>When I login with foobar and barfoo</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='d8d035a4-4d40-4890-8087-d286cba4444f-attachment.png' type='image/png' size='74382'/>
+                        <attachment title='Screenshot' source='82f6de58-17be-4a75-a1bc-49395f481a20-attachment.png' type='image/png' size='74382'/>
+                        <attachment title='Screenshot' source='e2f0d09c-2338-4611-9fa0-79c406e3e92e-attachment.png' type='image/png' size='76355'/>
+                        <attachment title='Screenshot' source='cba31d3e-5fa5-4ed5-bb77-6b8d7e7906a4-attachment.png' type='image/png' size='76353'/>
+                        <attachment title='Screenshot' source='9a62c6b3-0d90-4804-bb99-50b3341c410c-attachment.png' type='image/png' size='76621'/>
+                        <attachment title='Screenshot' source='170a9f9f-5757-4cf8-b14c-7acc2d951505-attachment.png' type='image/png' size='76621'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1676523543808' status='passed' stop='1676523543929'>
+                    <name>Then I should see a flash message saying "Your username is invalid!"</name>
+                    <title>Then I should see a flash message saying "Your username is invalid!"</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='5c3ab1ab-f071-43ef-897d-907a5886f2a9-attachment.png' type='image/png' size='77336'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1676523548811' stop='1676523548844'>
+    <name>In order to keep my product stable</name>
+    <title>In order to keep my product stable</title>
+    <test-cases>
+        <test-case start='1676523548824' status='broken' stop='1676523548832'>
+            <name>Check title of website after search</name>
+            <title>Check title of website after search</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+                <label name='feature' value='In order to keep my product stable'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.122'/>
+                <parameter kind='argument' name='browserVersion' value='109.0.5414.122'/>
+                <parameter kind='argument' name='browserVersion' value='109.0.5414.122'/>
+            </parameters>
+            <steps>
+                <step start='1676523548829' status='broken' stop='1676523548831'>
+                    <name>When I am on the "http://www.google.com" page</name>
+                    <title>When I am on the "http://www.google.com" page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I am on the "http://www.google.com" page" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I am on the "http://www.google.com" page" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(C:\webdriverIO8\src\features\tests\myTest.feature):1:1
+                	at Scenario(Check title of website after search):5:1
+                	at Step(I am on the "http://www.google.com" page):6:4
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
